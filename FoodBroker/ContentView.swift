@@ -10,7 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Find My")
+                .foregroundColor(.white)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.trailing,230)
+            
+            Text("Community")
+            .foregroundColor(.white)
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .padding(.trailing,180)
+            
+            
+                
+        }.background(Image("background")
+        .scaledToFill()
+        .edgesIgnoringSafeArea(.all)
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     }
 }
 
