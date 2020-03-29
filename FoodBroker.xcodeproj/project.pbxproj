@@ -14,6 +14,7 @@
 		03194814242FE9D9003753CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03194813242FE9D9003753CE /* Preview Assets.xcassets */; };
 		03194817242FE9D9003753CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03194815242FE9D9003753CE /* LaunchScreen.storyboard */; };
 		0319481F243094DD003753CE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0319481E243094DD003753CE /* SignUpView.swift */; };
+		031948212430E32E003753CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031948202430E32E003753CE /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		03194816242FE9D9003753CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03194818242FE9D9003753CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0319481E243094DD003753CE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		031948202430E32E003753CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				0319480C242FE9D0003753CE /* SceneDelegate.swift */,
 				0319480E242FE9D0003753CE /* OnBoardingScreen.swift */,
 				0319481E243094DD003753CE /* SignUpView.swift */,
+				031948202430E32E003753CE /* LoginView.swift */,
 				03194810242FE9D9003753CE /* Assets.xcassets */,
 				03194815242FE9D9003753CE /* LaunchScreen.storyboard */,
 				03194818242FE9D9003753CE /* Info.plist */,
@@ -152,6 +155,7 @@
 				0319481F243094DD003753CE /* SignUpView.swift in Sources */,
 				0319480B242FE9D0003753CE /* AppDelegate.swift in Sources */,
 				0319480D242FE9D0003753CE /* SceneDelegate.swift in Sources */,
+				031948212430E32E003753CE /* LoginView.swift in Sources */,
 				0319480F242FE9D0003753CE /* OnBoardingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
