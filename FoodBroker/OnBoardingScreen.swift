@@ -45,7 +45,6 @@ struct ContentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.leading, 80)
                     .padding(.trailing, 80)
-                    .cornerRadius(50)
                     .keyboardType(.decimalPad)
                 
                 Button("Search In My Area") {
