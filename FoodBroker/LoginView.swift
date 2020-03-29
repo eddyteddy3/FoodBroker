@@ -54,26 +54,56 @@ struct LoginView: View {
             
             HStack {
                 Button(action: {
-                    self.isAgreed = !self.passwordRememberDidSelect
+                    self.passwordRememberDidSelect.toggle()
                 }) {
-                    HStack(alignment: .top, spacing: 10) {
-                        
+                    HStack() {
                         Image(systemName: self.passwordRememberDidSelect ? "checkmark.square.fill" : "square.fill")
                             .accentColor(.gray)
                             .frame(width:20, height:20, alignment: .center)
                         
-                        HStack {
-                            Text("Agree with")
-                                .foregroundColor(.gray)
-                            Text("Terms & Conditions")
-                                .foregroundColor(.black)
-                        }
-                        
+                        Text("Remeber Password")
+                            .foregroundColor(.gray)
                     }
-                }.padding(.trailing, 60)
-            }
+                }.padding(.leading, 20)
+                
+                Spacer()
+                
+                Button(action: {
+                    //
+                }) {
+                    Text("Forgot Password?")
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                }.padding(.trailing, 20)
+                
+            }.padding(.top, 10)
             
             Spacer()
+            
+            Button(action: {
+                //1. Save state
+            }) {
+                Text("Create Account")
+                    .font(Font.custom("ArialRoundedMTBold", size: 20))
+                    .foregroundColor(.white)
+            }.frame(width: 315, height: 50)
+                .background(Color("ButtonColor"))
+                .cornerRadius(30)
+                .shadow(color: Color(UIColor.black).opacity(0.5), radius: 4, x: 0, y: 4)
+            
+            HStack {
+                Text("Don't have an account?")
+                    .foregroundColor(.gray)
+                //                Text("Terms & Conditions")
+                //                    .foregroundColor(.black)
+                Button(action: {
+                    //
+                }) {
+                    Text("Create Account")
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                }
+            }.padding(.top, 15)
         }
     }
 }

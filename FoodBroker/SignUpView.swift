@@ -200,7 +200,7 @@ struct SignUpView: View {
                         .foregroundColor(.black)
                         .fontWeight(.semibold)
                 }
-            }.padding(.top, 10)
+            }.padding(.top, 15)
         }
     }
 }
