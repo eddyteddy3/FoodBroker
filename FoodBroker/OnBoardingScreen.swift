@@ -36,10 +36,36 @@ struct ContentView: View {
                     .fontWeight(.regular)
                     .padding(.trailing, 130)
                 
+                HStack {
+                    VStack {
+                        Image("donor")
+                            .resizable()
+                            .frame(width: 60, height: 60, alignment: .center)
+                        
+                        Text("Donor")
+                    }.frame(width: 100, height: 100)
+                    .background(Color(.systemGray))
+                        .cornerRadius(15)
+                        .onTapGesture {
+                            //
+                    }
+                    
+                    VStack {
+                        Image("reciepient")
+                            .resizable()
+                            .frame(width: 60, height: 60, alignment: .center)
+                        
+                        Text("Reciepient")
+                    }.frame(width: 100, height: 100)
+                    .background(Color(.systemGray))
+                    .cornerRadius(15)
+                    
+                    Spacer()
+                }.padding(.leading, 80)
                 
                 TextField("Enter Zip Code", text: $textFieldText)
                     .foregroundColor(.black)
-                    .font(Font.system(size: 28, weight: .light, design: .rounded))
+                    .font(Font.system(size: 26, weight: .light, design: .rounded))
                     .background(Color(UIColor.white))
                     .padding(.bottom, 20)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
