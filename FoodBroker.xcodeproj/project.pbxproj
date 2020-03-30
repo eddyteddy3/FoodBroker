@@ -15,6 +15,8 @@
 		03194817242FE9D9003753CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03194815242FE9D9003753CE /* LaunchScreen.storyboard */; };
 		0319481F243094DD003753CE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0319481E243094DD003753CE /* SignUpView.swift */; };
 		031948212430E32E003753CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031948202430E32E003753CE /* LoginView.swift */; };
+		031948252430E88D003753CE /* DonorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031948242430E88D003753CE /* DonorMainView.swift */; };
+		031948272430F216003753CE /* DonorPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031948262430F216003753CE /* DonorPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		03194818242FE9D9003753CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0319481E243094DD003753CE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		031948202430E32E003753CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		031948242430E88D003753CE /* DonorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorMainView.swift; sourceTree = "<group>"; };
+		031948262430F216003753CE /* DonorPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		031947FE242FE9D0003753CE = {
 			isa = PBXGroup;
 			children = (
+				031948242430E88D003753CE /* DonorMainView.swift */,
 				03194809242FE9D0003753CE /* FoodBroker */,
 				03194808242FE9D0003753CE /* Products */,
 			);
@@ -65,6 +70,7 @@
 				0319480E242FE9D0003753CE /* OnBoardingScreen.swift */,
 				0319481E243094DD003753CE /* SignUpView.swift */,
 				031948202430E32E003753CE /* LoginView.swift */,
+				031948262430F216003753CE /* DonorPageView.swift */,
 				03194810242FE9D9003753CE /* Assets.xcassets */,
 				03194815242FE9D9003753CE /* LaunchScreen.storyboard */,
 				03194818242FE9D9003753CE /* Info.plist */,
@@ -154,9 +160,11 @@
 			files = (
 				0319481F243094DD003753CE /* SignUpView.swift in Sources */,
 				0319480B242FE9D0003753CE /* AppDelegate.swift in Sources */,
+				031948252430E88D003753CE /* DonorMainView.swift in Sources */,
 				0319480D242FE9D0003753CE /* SceneDelegate.swift in Sources */,
 				031948212430E32E003753CE /* LoginView.swift in Sources */,
 				0319480F242FE9D0003753CE /* OnBoardingScreen.swift in Sources */,
+				031948272430F216003753CE /* DonorPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
