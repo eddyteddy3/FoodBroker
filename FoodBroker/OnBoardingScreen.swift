@@ -12,6 +12,7 @@ import Foundation
 
 struct ContentView: View {
     @State var textFieldText = ""
+    @State var isSelected = false
     
     var body: some View {
         ZStack {
@@ -40,25 +41,33 @@ struct ContentView: View {
                     VStack {
                         Image("donor")
                             .resizable()
-                            .frame(width: 60, height: 60, alignment: .center)
+                            .frame(width: 40, height: 40, alignment: .center)
                         
                         Text("Donor")
-                    }.frame(width: 100, height: 100)
+                    }.frame(width: 80, height: 80)
                     .background(Color(.systemGray))
                         .cornerRadius(15)
+                        .shadow(radius: isSelected ? 0 : 30)
                         .onTapGesture {
-                            //
+                            self.isSelected.toggle()
                     }
+                    
+                    Spacer()
                     
                     VStack {
                         Image("reciepient")
                             .resizable()
-                            .frame(width: 60, height: 60, alignment: .center)
+                            .frame(width: 40, height: 40, alignment: .center)
                         
                         Text("Reciepient")
-                    }.frame(width: 100, height: 100)
+                            .fontWeight(.light)
+                    }.frame(width: 80, height: 80)
                     .background(Color(.systemGray))
                     .cornerRadius(15)
+                    .shadow(radius: isSelected ? 30 : 0)
+                        .onTapGesture {
+                            self.isSelected.toggle()
+                    }
                     
                     Spacer()
                 }.padding(.leading, 80)
